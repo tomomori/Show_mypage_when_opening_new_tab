@@ -1,0 +1,22 @@
+{
+    "name": "Show mypage when opening new tab",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "Show my page when you open a new tab in your browser.",
+    "icons": {
+        "16": "icons/tm016.png",
+        "32": "icons/tm032.png",
+        "48": "icons/tm048.png",
+        "128": "icons/tm128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "background": {
+      "service_worker":"scripts.js"
+    }
+}
